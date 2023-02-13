@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #15163D;
+    /* border: 0.1px dashed grey; */
+}
+
+body {
+    max-width: 100%;
+    font-size: 16px;
+    padding-top: 1.5em;
+    background-image: radial-gradient(circle at top left, #5974FF, white 40vw);
+    background-size: ;
+}
+
+main,
+nav{
+    width: 75vw;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+nav,
+nav ul,
+#a_logo {
+    display: flex;
+}
+
+nav {
+    height: 4em;
+    justify-content: flex-end;
+}
+
+nav ul {
+    list-style: none;
+    align-items: center;
+    justify-self: flex-end;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 2em;
+    font-variation-settings: 'wght' 400;
+}
+
+#a_logo {
+    align-items: center;
+    margin-right: auto;
+}
+
+#logo {
+    width: 80px;
+}
+
+section,
+header {
+    display: flex;
+    margin: 5em 0;
+}
+
+section div,
+header div {
+    width: 50%;
+}
+
+div img {
+    width: 100%;
+}
+
+#diseño,
+#forma_parte {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+h2,
+section p,
+header p,
+h1 {
+    width: 90%;
+}
+
+h2,
+h1 {
+    font-size: 3.625em;
+    font-variation-settings: 'wght' 700;
+}
+
+section p {
+    font-size: 1em;
+    text-transform: capitalize;
+    margin: 3em 0;
+}
+
+header p {
+    font-size: 1em;
+    margin: 3em 0;
+}
+
+footer {
+    background-color: #15163D;
+    height: auto;
+    padding: 4em 0 1em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border:#15163D; */
+}
+
+footer div {
+    display: flex;
+    width: 75vw;
+}
+
+footer li,
+footer p {
+    color: aliceblue;
+    font-size: 1em;
+    list-style: none;
+    text-transform: capitalize;
+    padding: 1em 0;
+}
+
+footer ul {
+    width: 20em;
+}
+
+footer p {
+    text-align: center;
+    margin: 2em 0 0 0;
+}
+
+footer li,
+p {
+    font-variation-settings: 'wght' 300;
+}
+
+.encabezado_lista {
+    font-size: 1.125em;
+    font-variation-settings: 'wght' 700;
+}
+
+button {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 600;
+    background-color: #04146C;
+    color: white;
+    height: 3em;
+    width: 11em;
+    border-radius: 8px;
+    border-style: none;
+    cursor: pointer;
+}
+
+#boton2 {
+    align-self: flex-start;
+    margin-left: 4vw;
+}
+
+@media (max-width:768px) {
+
+    h1,
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    header,
+    section {
+        flex-direction: column;
+    }
+
+    section div,
+    header div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2,
+    section p,
+    header p,
+    h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #section_forma_parte {
+        display: none;
+    }
+
+    div#diseño {
+        order: 0;
+    }
+
+}
